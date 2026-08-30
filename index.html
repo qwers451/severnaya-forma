@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Северная Форма — дизайнерская мебель из массива. Демонстрационный интернет-магазин.">
+  <title>Северная Форма — мебель из массива</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="account.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Северная Форма, на главную">
+      <span class="brand-mark">СФ</span><span>СЕВЕРНАЯ<br>ФОРМА</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#catalog">Каталог</a><a href="#materials">Материалы</a><a href="#about">О мастерской</a><a href="#delivery">Доставка</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchOpen" aria-label="Открыть поиск">⌕</button>
+      <button class="text-button account-button" id="accountOpen">Войти</button>
+      <button class="text-button" id="favoritesOpen">Избранное <span id="favoriteCount">0</span></button>
+      <button class="text-button" id="cartOpen">Корзина <span id="cartCount">0</span></button>
+      <button class="menu-button" id="menuOpen" aria-label="Открыть меню"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Архангельск · Санкт-Петербург</p>
+        <h1>Мебель,<br>в которой живёт<br><em>север</em></h1>
+        <p class="hero-lead">Тихие предметы из массива дерева для спокойных, настоящих интерьеров.</p>
+        <a class="arrow-link light" href="#catalog">Смотреть коллекцию <span>↘</span></a>
+      </div>
+      <div class="hero-art" aria-label="Деревянный стол в северном интерьере">
+        <div class="sun"></div><div class="window-line"></div><div class="table-top"></div><div class="table-leg leg-a"></div><div class="table-leg leg-b"></div><div class="vase"></div><div class="branch b1"></div><div class="branch b2"></div>
+        <p class="hero-caption">Коллекция «Тишина»<br>Дуб, натуральное масло</p>
+      </div>
+      <div class="hero-index">01 / 04</div>
+    </section>
+
+    <section class="intro" id="about">
+      <p class="section-label">Наш подход</p>
+      <h2>Создаём честную мебель —<br>выразительную без лишнего.</h2>
+      <div class="intro-grid">
+        <p>Мы соединяем северную сдержанность, природную фактуру древесины и современный комфорт. Каждый предмет собирается вручную небольшими сериями.</p>
+        <a class="arrow-link" href="#story">Узнать о мастерской <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="featured" aria-labelledby="featured-title">
+      <div class="section-heading"><p class="section-label">Выбор мастерской</p><h2 id="featured-title">Знаковые предметы</h2><div class="slider-buttons"><button id="featuredPrev" aria-label="Предыдущие товары">←</button><button id="featuredNext" aria-label="Следующие товары">→</button></div></div>
+      <div class="featured-track" id="featuredTrack"></div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="catalog-head">
+        <div><p class="section-label">Магазин</p><h2>Каталог</h2></div>
+        <p class="catalog-intro">64 предмета для дома, созданные из дуба, ясеня и лиственницы.</p>
+      </div>
+      <div class="catalog-tools">
+        <button class="filter-toggle" id="filterToggle">Фильтры <span id="activeFilterCount">0</span></button>
+        <div class="category-tabs" id="categoryTabs" role="tablist"></div>
+        <label class="sort-label">Сортировка <select id="sortSelect"><option value="popular">По популярности</option><option value="price-asc">Сначала дешевле</option><option value="price-desc">Сначала дороже</option><option value="new">Сначала новые</option></select></label>
+      </div>
+      <div class="catalog-status"><span id="resultsCount"></span><button id="clearFilters">Сбросить фильтры</button></div>
+      <div class="product-grid" id="productGrid"></div>
+      <button class="load-more" id="loadMore">Показать ещё <span>↓</span></button>
+    </section>
+
+    <section class="materials" id="materials">
+      <div class="material-copy"><p class="section-label">Материалы</p><h2>Дерево говорит<br>само за себя</h2><p>Мы выбираем древесину с живым рисунком и подчёркиваем её характер натуральными маслами. Никакой имитации — только настоящая фактура.</p><button class="arrow-link button-link" data-toast="Открыта демо-страница материалов">Подробнее о материалах <span>→</span></button></div>
+      <div class="wood-samples"><button class="wood active" data-wood="Дуб"><i></i><span>01</span><strong>Дуб</strong></button><button class="wood" data-wood="Ясень"><i></i><span>02</span><strong>Ясень</strong></button><button class="wood" data-wood="Лиственница"><i></i><span>03</span><strong>Лиственница</strong></button></div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-art"><div class="arch"></div><div class="bench"></div><div class="shadow"></div></div>
+      <div class="story-copy"><p class="section-label">Сделано на севере</p><h2>От эскиза<br>до последнего<br>касания</h2><p>Мы сами проектируем, подбираем материал, собираем и доводим каждый предмет. Поэтому знаем историю каждой доски и отвечаем за результат.</p><button class="outline-button" data-modal="contact">Посетить мастерскую</button></div>
+    </section>
+
+    <section class="delivery" id="delivery">
+      <p class="section-label">Сервис</p><div class="service-grid"><article><span>01</span><h3>Доставка по России</h3><p>Бережно упакуем и доставим транспортной компанией до двери.</p></article><article><span>02</span><h3>Примерка материалов</h3><p>Отправим образцы дерева и отделки перед заказом.</p></article><article><span>03</span><h3>Индивидуальный размер</h3><p>Адаптируем большинство моделей под ваше пространство.</p></article><article><span>04</span><h3>Гарантия 24 месяца</h3><p>Остаёмся рядом и после того, как мебель окажется у вас дома.</p></article></div>
+    </section>
+
+    <section class="newsletter"><p class="section-label">Письма с севера</p><h2>Новые предметы,<br>истории и редкие скидки</h2><form id="subscribeForm"><input type="email" placeholder="Ваш e-mail" aria-label="Ваш e-mail" required><button type="submit">Подписаться →</button></form><small>Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.</small></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark">СФ</span><span>СЕВЕРНАЯ<br>ФОРМА</span></a><div><h4>Коллекции</h4><a href="#catalog">Столы</a><a href="#catalog">Стулья</a><a href="#catalog">Хранение</a><a href="#catalog">Малые формы</a></div><div><h4>Покупателям</h4><a href="#delivery">Доставка и оплата</a><button data-modal="contact">Связаться</button><button data-toast="Раздел вопросов работает в демо-режиме">Вопросы и ответы</button></div><div><h4>Контакты</h4><a href="mailto:hello@severnaya-forma.demo">hello@severnaya-forma.demo</a><p>+7 800 555-28-14</p><p>Ежедневно, 10:00–20:00</p></div><p class="copyright">© 2026 Демо-проект «Северная Форма». Не связан с Valkeda.</p></footer>
+
+  <aside class="drawer" id="filterDrawer" aria-hidden="true"><div class="drawer-head"><h2>Фильтры</h2><button class="drawer-close" data-close="filterDrawer">×</button></div><div class="filter-block"><h3>Цена, ₽</h3><div class="price-inputs"><input id="priceMin" type="number" value="0" min="0"><span>—</span><input id="priceMax" type="number" value="300000" min="0"></div></div><div class="filter-block"><h3>Материал</h3><label><input type="checkbox" name="material" value="Дуб"> Дуб</label><label><input type="checkbox" name="material" value="Ясень"> Ясень</label><label><input type="checkbox" name="material" value="Лиственница"> Лиственница</label></div><div class="filter-block"><h3>Наличие</h3><label><input id="inStockOnly" type="checkbox"> Только в наличии</label></div><button class="drawer-apply" id="applyFilters">Показать товары</button></aside>
+  <aside class="drawer right" id="cartDrawer" aria-hidden="true"><div class="drawer-head"><h2>Корзина</h2><button class="drawer-close" data-close="cartDrawer">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-total"><span>Итого</span><strong id="cartTotal">0 ₽</strong></div><button class="drawer-apply" id="checkoutButton">Оформить заказ</button></aside>
+  <aside class="drawer right" id="favoriteDrawer" aria-hidden="true"><div class="drawer-head"><h2>Избранное</h2><button class="drawer-close" data-close="favoriteDrawer">×</button></div><div id="favoriteItems" class="cart-items"></div></aside>
+  <aside class="drawer right account-drawer" id="accountDrawer" aria-hidden="true"><div class="drawer-head"><h2>Личный кабинет</h2><button class="drawer-close" data-close="accountDrawer">×</button></div><div id="accountContent"></div></aside>
+  <aside class="menu-panel" id="menuPanel" aria-hidden="true"><button class="drawer-close" data-close="menuPanel">×</button><nav><a href="#catalog">Каталог</a><a href="#materials">Материалы</a><a href="#about">О мастерской</a><a href="#delivery">Доставка и оплата</a></nav><p>Архангельск · Санкт-Петербург</p></aside>
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true"><button class="drawer-close" data-close="searchOverlay">×</button><label>Поиск по каталогу<input id="searchInput" type="search" placeholder="Например, стол Долина"></label><div id="searchResults"></div></div>
+  <div class="modal" id="productModal" aria-hidden="true"><div class="modal-card product-modal-card"><button class="drawer-close" data-close="productModal">×</button><div id="productModalContent"></div></div></div>
+  <div class="modal" id="contactModal" aria-hidden="true"><form class="modal-card" id="contactForm"><button type="button" class="drawer-close" data-close="contactModal">×</button><p class="section-label">Обратная связь</p><h2>Обсудим ваш проект</h2><input required placeholder="Имя"><input required type="tel" placeholder="Телефон"><textarea placeholder="Что хотите заказать?"></textarea><button class="drawer-apply" type="submit">Отправить заявку</button></form></div>
+  <div class="modal" id="checkoutModal" aria-hidden="true"><form class="modal-card checkout-card" id="checkoutForm"><button type="button" class="drawer-close" data-close="checkoutModal">×</button><p class="section-label">Оформление заказа</p><h2>Доставка и контакты</h2><div class="checkout-summary" id="checkoutSummary"></div><div class="form-grid"><label>Имя<input id="orderName" required autocomplete="name"></label><label>Телефон<input id="orderPhone" required type="tel" placeholder="+7 999 000-00-00"></label><label class="wide">E-mail<input id="orderEmail" required type="email"></label><label class="wide">Город и адрес<input id="orderAddress" required placeholder="Город, улица, дом, квартира"></label></div><fieldset><legend>Доставка</legend><label><input type="radio" name="delivery" value="Курьером" checked> Курьером до двери — бесплатно</label><label><input type="radio" name="delivery" value="Самовывоз"> Самовывоз из мастерской</label></fieldset><fieldset><legend>Оплата</legend><label><input type="radio" name="payment" value="При получении" checked> При получении</label><label><input type="radio" name="payment" value="По счёту"> По счёту после подтверждения</label></fieldset><label class="agreement"><input type="checkbox" required> Согласен на обработку данных в рамках демо-заказа</label><button class="drawer-apply" type="submit">Подтвердить демо-заказ</button><p class="demo-note">Это демонстрация: данные никуда не отправляются, оплата не производится.</p></form></div>
+  <div class="modal" id="orderSuccessModal" aria-hidden="true"><div class="modal-card success-card"><button class="drawer-close" data-close="orderSuccessModal">×</button><div class="success-icon">✓</div><p class="section-label">Заказ оформлен</p><h2>Спасибо!</h2><p id="orderSuccessText"></p><button class="drawer-apply" id="successAccount">Перейти в личный кабинет</button></div></div>
+  <div class="backdrop" id="backdrop"></div><div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.auth-tabs{display:grid;grid-template-columns:1fr 1fr;margin:30px 0;border-bottom:1px solid var(--line)}
+.auth-tabs button{border:0;background:none;padding:14px;text-transform:uppercase;font-size:9px;letter-spacing:.12em}
+.auth-tabs button.active{border-bottom:2px solid var(--ink)}
+.auth-form label,.form-grid label{display:block;text-transform:uppercase;font-size:9px;letter-spacing:.12em;margin-top:18px}
+.auth-form input,.form-grid input{display:block;width:100%;padding:12px 0;border:0;border-bottom:1px solid var(--line);background:none;outline:0;font-size:14px;text-transform:none;letter-spacing:0}
+.auth-hint,.demo-note{font-size:10px;line-height:1.5;color:#777;margin-top:15px}
+.profile-card{padding:28px 0;border-bottom:1px solid var(--line)}
+.profile-card h3{font-family:Georgia,serif;font-size:30px;font-weight:400;margin:0 0 8px}
+.profile-card p{color:#666;line-height:1.6}.profile-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0}
+.profile-actions button{padding:13px;background:none;border:1px solid var(--line);text-transform:uppercase;font-size:9px;letter-spacing:.1em}
+.orders-title{text-transform:uppercase;font-size:10px;letter-spacing:.13em;margin:35px 0 10px}.order-card{padding:17px 0;border-bottom:1px solid var(--line)}
+.order-card div{display:flex;justify-content:space-between}.order-card strong{font-size:12px}.order-card p{font-size:11px;color:#666;margin:7px 0}
+.checkout-card{width:min(720px,100%)}.checkout-summary{display:flex;justify-content:space-between;padding:15px;background:#e6e3da;margin:20px 0}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.form-grid .wide{grid-column:1/-1}
+.checkout-card fieldset{border:0;border-top:1px solid var(--line);padding:20px 0;margin:22px 0 0}.checkout-card legend{text-transform:uppercase;font-size:9px;letter-spacing:.12em;padding:0 12px 0 0}
+.checkout-card fieldset label{display:block;margin:11px 0}.checkout-card fieldset input,.agreement input{width:auto;margin:0 8px 0 0}.agreement{display:block;font-size:11px;line-height:1.5}
+.success-card{text-align:center}.success-icon{width:64px;height:64px;border:1px solid;border-radius:50%;display:grid;place-items:center;font-size:28px;margin:0 auto 28px}.success-card .section-label{margin-bottom:12px}.account-button.logged-in{color:var(--rust);font-weight:700}
+@media(max-width:1000px){.header-actions .account-button{display:block!important}.header-actions #favoritesOpen{display:none}}
+@media(max-width:680px){.account-button{max-width:68px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.checkout-card{padding:26px 20px}.form-grid{grid-template-columns:1fr}.form-grid .wide{grid-column:auto}.profile-actions{grid-template-columns:1fr}.modal-card h2{font-size:34px}}
